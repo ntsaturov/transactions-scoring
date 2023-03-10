@@ -1,0 +1,2 @@
+object TransactionsScoringApp extends App {
+}

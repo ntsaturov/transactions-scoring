@@ -1,2 +1,15 @@
+.idea/
+.bsp/
+/?
+*.iml
+.DS_Store
+
+/venv
+**/target/
+/project/project
+/docker
+/native
+
+*.orig
 *.class
 *.log
