@@ -3,6 +3,8 @@ Transaction scoring system with supporting of lua-rules scripts.
 
 [Public backlog](https://trello.com/b/zdg7RtHf/transactions-scoring-system)
 
+<img src="https://github.com/ntsaturov/transactions-scoring/blob/feature/dev-build/docs/schema.png" width="800" height="650">
+
 #### ADT description
 
 1. id - operation id - UUID
