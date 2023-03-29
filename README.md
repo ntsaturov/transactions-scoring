@@ -8,20 +8,20 @@ Transaction scoring system with supporting of lua-rules scripts.
 #### ADT description
 
 1. id - operation id - UUID
-2. transactionId - transaction id - number like a string, size - 12 characters
-3. rules - list of rules tags
-4. status - transaction status - HOLD -> OK / BLOCK
-5. comment - field with supporting information for analysts;
-6. data - transaction data block of custom fields:
+2. transactionId - transaction id - String
+3. rules - list of rules tags - List of strings
+4. status - transaction status - HOLD -> OK / BLOCK - String
+5. comment - field with supporting information for analysts; - String
+6. data - transaction data block of custom fields: - Json data
 
-   - SOURCE_PHONE - source phone number
-   - SOURCE_ID -  source payment-account id
+   - SOURCE_PHONE - source phone number - String
+   - SOURCE_ID -  source payment-account id - String
    - AMOUNT
    - DATE  - transaction date
    - IP - client ip
    - RECIPIENT_PHONE - recipient phone number
    - RECIPIENT_ID - recipient payment-account id
-   - PAYMENT_COMMENT - payment comment
+   - PAYMENT_COMMENT - payment comment - String
 
 Transaction example:
 
@@ -44,7 +44,6 @@ Transaction example:
     }
 }
 ```
-
 
 #### Purpose
 
