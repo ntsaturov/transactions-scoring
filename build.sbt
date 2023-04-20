@@ -1,5 +1,8 @@
-scalaVersion := "2.13.8"
+import Dependencies.*
 
-name := "transactions-scoring"
-version := "1.0"
-libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
+lazy val root = (project in file("."))
+  .settings(
+    name                 := "transactions-scoring",
+    scalaVersion         := "2.13.9",
+    libraryDependencies ++= commons,
+  )
